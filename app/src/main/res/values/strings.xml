@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SpaceX Launches</string>
+    <string name="list_of_rockets">List of Rockets</string>
+    <string name="mission_name">Mission Name:\u0020</string>
+    <string name="rocket_name">Rocket Name:\u0020</string>
+    <string name="launch_date">Launch Date:\u0020</string>
+    <string name="site_name">Site Name:\u0020</string>
+    <string name="article">Article</string>
+    <string name="error">Error</string>
+    <string name="error_message">There is an error loading the rocket list!</string>
+    <string name="retry">Retry</string>
+    <string name="exit">Exit</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/rocketsListFragment">
+
+    <fragment
+        android:id="@+id/rocketsListFragment"
+        android:name="com.beweaver.spacexlaunches.ui.fragments.RocketsListFragment"
+        android:label="rocketsListFragment"
+        tools:layout="@layout/fragment_rockets_list">
+        <action android:id="@+id/toRocketDetailsFragment"
+            app:destination="@id/rocketDetailsFragment"/>
+        <action android:id="@+id/toRocketVideoFragment"
+            app:destination="@id/rocketVideoFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/rocketDetailsFragment"
+        android:name="com.beweaver.spacexlaunches.ui.fragments.RocketDetailsFragment"
+        android:label="rocketDetailsFragment"
+        tools:layout="@layout/fragment_rocket_details">
+        <argument android:name="articleURL"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/rocketVideoFragment"
+        android:name="com.beweaver.spacexlaunches.ui.fragments.RocketVideoFragment"
+        android:label="rocketVideoFragment"
+        tools:layout="@layout/fragment_rocket_video">
+        <argument android:name="videoURL"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+</navigation>
